@@ -1,0 +1,336 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+body {
+  font-family: 'Product Sans', sans-serif;
+  color: #000000;
+  font-style: normal;
+  font-weight: 700;
+  scrollbar-width: none;
+  overflow: auto;
+  background: linear-gradient(180deg, rgba(242, 201, 76, 0.2) 0%, rgba(242, 153, 74, 0.2) 100%);
+  position: relative;
+  overflow: hidden;
+  margin-top: -50px;
+  margin-left: -10px;
+  width: 101%;
+  height: 600px;
+}
+
+.app {
+  background-color: #FFFFFF;
+  margin-top: 480px;
+  margin-left: 10px;
+  position: absolute;
+  height: 60vh;
+  width: 105%;
+  transform:rotate(170deg);
+}
+
+.app__container {
+  transform:rotate(-170deg);
+}
+
+h3 {
+  font-size: 36px;
+  line-height: 50px;
+  color: #4E598C;
+}
+
+.userForm {
+  position: relative;
+  left: 30%;
+  top: 8%;
+  height: 155px;
+  width: 40%;
+  padding: 10px;
+}
+
+.linkSlide {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0;
+  color: #BDBDBD;
+  border-bottom: 2px solid #000000;
+}
+
+.linkSlide h4 {
+  flex: 2;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.linkSlide h4:active, .linkSlide > h4:hover {
+  color: #F2994A;
+}
+
+.peronalInfo {
+  border-bottom: 4px solid #F2994A;
+  border-radius: 30px;
+}
+
+.personalInfo hr, .billingInfo hr, .confirmPayment hr {
+  border: 3.6px solid #F2994A;
+  background-color: #F2994A;
+  border-radius: 40px;
+  width: 9rem;
+  top: 78%;
+  position: absolute;
+  display: none;
+}
+
+.container {
+  position: relative;
+  left: 30%;
+  top: 8%;
+  height: 700px;
+  width: 40%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.confirmContainer {
+  position: relative;
+  left: 30%;
+  top: 20%;
+  height: 700px;
+  width: 40%;
+  padding: 10px;
+}
+
+.form-group {
+  width: 100%;
+  height: 55px;
+  margin: 25px 0 20px 0;
+}
+
+.bill {
+  margin-top: 0;
+}
+
+.container form:first-child {
+  margin-top: 10px;
+}
+
+.form-group label {
+  font-weight: 600;
+  display: block;
+  font-size: 17px;
+}
+
+label span {
+  color: #EB5757;
+  font-size: 18px;
+  font-weight: 800;
+  display: inline-block;
+}
+
+.form-group small {
+  color: #817E9E;
+  font-weight: 400;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.form-control {
+  border-radius: 5px;
+  width: 100%;
+  height: 35px;
+  border: 1px solid #4E598C;
+  background: #FFFFFF;
+  padding: 3px 15px;
+  font-size: 16px;
+  line-height: 2px;
+  margin-top: 8px;
+  letter-spacing: 2px;
+}
+
+.address1 {
+  margin-top: 40px;
+}
+
+.form-group_location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  margin-bottom: 40px;
+}
+
+button {
+  padding: 10px 60px;
+  color: #F7F7FF;
+  cursor: pointer;
+  background-color: #F2994A;
+  border: 0;
+  border-radius: 5px;
+  font-weight: 400;
+  margin-right: 40px
+}
+
+button:hover {
+  opacity: .9;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+.cancelSpan {
+  color: rgb(78, 25, 128);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cancelSpan:hover {
+  color: darkorange;
+}
+
+.active {
+  color: darkorange;
+}
+
+.paymentContainer {
+  width: 100%;
+  height: 300px;
+  background-color: #ffffff;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  font-size: 18px;
+  box-shadow: 0 0 15px rgb(156, 150, 150);
+  overflow: hidden;
+}
+
+.paymentContainer__top {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(66, 66, 238);
+  color: white;
+  height: 50px;
+  padding: 10px 60px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.paymentContainer__top span{
+  display: inline-block;
+  padding-right: 10px;
+  text-decoration: line-through;
+  text-decoration-style: double;
+}
+
+.paymentContainer__bottom{
+  width: 90%;
+  padding: 0;
+  color: rgb(63, 52, 80);
+  font-weight: 600;
+  border-bottom: 1px solid rgb(119, 111, 131);
+  margin: auto;
+}
+
+.data1, .data2 {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-between;
+  margin: 45px 25px 25px 25px;
+}
+
+.data2 span {
+  color: black;
+}
+
+.cartContainer {
+  width: 90%;
+  color: rgb(63, 52, 80);
+  font-weight: 600;
+  display: flex;
+  margin: 25px auto;
+  text-align: center;
+  justify-content: space-between;
+  border: 1px solid rgb(63, 52, 80);
+  height: 45px;
+  border-radius: 5px;
+  padding: 10px 30px;
+}
+
+.confirmContainer__div { 
+  width: 100%;
+  height: 280px;
+  background-color: #ffffff;
+  padding: 30px 100px;
+  border-radius: 10px;
+  font-size: 18px;
+  box-shadow: 0 0 15px rgb(156, 150, 150);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.confirmContainer__icon {
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 0 5px rgb(156, 150, 150);
+  border-radius: 50%;
+  align-self: center;
+  background-image: url('./assets/icon.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-size: 100%;
+}
+
+.confirmContainer__heading h2 {
+  font-weight: 600;
+  margin-top: 5px;
+  color: rgb(63, 52, 80);
+}
+
+.confirmContainer__heading {
+  display: flex;
+  flex-direction: column;
+}
+
+.confirmSmall {
+  color: #4F4F4F;
+}
+
+.confirmSpan {
+  text-decoration: underline;
+  color: darkorange;
+  cursor: pointer;
+}
+
+.confirmSpan:hover {
+  opacity: .8;
+}
+
+.form-group-bill-flex1 {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.form-group-bill-flex2 {
+  flex-basis: 110px;
+}
+
+.first {
+  margin-right: 20px;
+}
+
+.form-group-flex1 {
+  flex-basis: 280px;
+  margin-right: 40px;
+}
+
+.form-group-flex2 {
+  flex: 1
+}
